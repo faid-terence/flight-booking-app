@@ -1,3 +1,5 @@
+import 'package:flight_booking_app/components/ui/found_flights.dart';
+
 import 'package:flight_booking_app/pages/main_page.dart';
 import 'package:flutter/material.dart';
 
@@ -13,9 +15,10 @@ class App extends StatelessWidget {
         primarySwatch: Colors.blue,
         scaffoldBackgroundColor: Colors.white,
       ),
-
       home: MainPage(),
-      
+      routes: {
+        "/found-flights": (context) => FoundFlights(),
+      },
     );
   }
 }

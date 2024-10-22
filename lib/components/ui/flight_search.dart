@@ -81,6 +81,7 @@ class FlightSearch extends StatelessWidget {
               text: 'Find Flights',
               onPressed: () {
                 print('Search Flights');
+                Navigator.pushNamed(context, '/found-flights');
               },
             ),
           ],
