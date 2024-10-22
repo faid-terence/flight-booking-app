@@ -3,10 +3,12 @@ import 'package:intl/intl.dart';
 
 class DatePickerInput extends StatefulWidget {
   final Function(DateTime?)? onChanged;
+  final String placeholder;
 
   const DatePickerInput({
     Key? key,
     this.onChanged,
+    required this.placeholder,
   }) : super(key: key);
 
   @override
@@ -59,7 +61,7 @@ class _DatePickerInputState extends State<DatePickerInput> {
               Text(
                 selectedDate != null
                     ? DateFormat('EEEE, MMMM d').format(selectedDate!)
-                    : 'Select a date',
+                    : widget.placeholder,
                 style: TextStyle(
                   fontSize: 16,
                   color: selectedDate != null

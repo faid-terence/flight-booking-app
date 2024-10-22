@@ -4,8 +4,8 @@ import 'package:flight_booking_app/components/shared/my_date_picker.dart';
 import 'package:flight_booking_app/components/shared/my_text_field.dart';
 import 'package:flutter/material.dart';
 
-class ExplorePage extends StatelessWidget {
-  const ExplorePage({super.key});
+class FlightSearch extends StatelessWidget {
+  const FlightSearch({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,18 +20,18 @@ class ExplorePage extends StatelessWidget {
               text: const TextSpan(
                 children: [
                   TextSpan(
-                    text: 'Extreme',
+                    text: 'Split the payment',
                     style: TextStyle(
                       color: Colors.blue, // Make 'Extreme' blue
-                      fontSize: 32,
+                      fontSize: 26,
                       fontWeight: FontWeight.bold,
                       height: 1.2,
                     ),
                   ),
                   TextSpan(
-                    text: '\nairplane flight',
+                    text: '\nwith other passengers',
                     style: TextStyle(
-                      fontSize: 32,
+                      fontSize: 26,
                       fontWeight: FontWeight.bold,
                       height: 1.2,
                       color: Colors.black,
@@ -42,14 +42,29 @@ class ExplorePage extends StatelessWidget {
             ),
             const SizedBox(height: 24),
             MyTextField(
-              placeholder: "Where are you flying from?",
+              placeholder: "from?",
               onChanged: (value) {
                 print(value);
               },
             ),
-            const SizedBox(height: 2),
+
+            MyTextField(
+              placeholder: "Where to?",
+              onChanged: (value) {
+                print(value);
+              },
+            ),
+            const SizedBox(height: 24),
             DatePickerInput(
-              placeholder: "Departure Date",
+              placeholder: "Date of Departure",
+              onChanged: (value) {
+                print(value);
+              },
+            ),
+
+            const SizedBox(height: 24),
+            DatePickerInput(
+              placeholder: "Date of arrival",
               onChanged: (value) {
                 print(value);
               },
