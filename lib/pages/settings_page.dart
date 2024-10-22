@@ -46,7 +46,7 @@ class SettingsPage extends StatelessWidget {
           children: [
             // Profile Section
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 24),
+              padding: const EdgeInsets.symmetric(vertical: 50),
               child: Column(
                 children: [
                   Stack(

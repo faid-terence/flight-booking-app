@@ -1,3 +1,4 @@
+import 'package:flight_booking_app/components/ui/flight_search.dart';
 import 'package:flutter/material.dart';
 
 class FlightsPage extends StatelessWidget {
@@ -5,6 +6,9 @@ class FlightsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Column(
+      // Flight Search Section
+      children: [FlightSearch()],
+    );
   }
 }
