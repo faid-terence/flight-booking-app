@@ -19,7 +19,7 @@ class _MainPageState extends State<MainPage> {
     const HomePage(),
     const FlightsPage(),
     const ProfilePage(),
-    const SettingsPage(),
+    SettingsPage(),
   ];
 
   void _onItemTapped(int index) {
